@@ -1,0 +1,144 @@
+.gearup_container {
+    margin-top: 100px;
+}
+
+.gearup_title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 74px;
+    letter-spacing: -0.01em;
+    text-align: right;
+  }
+  
+  .gearup_wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  
+  .gearup_image_container {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+    height: 500px;
+  }
+  
+  .gearup_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+  
+  .gearup_scroll_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .gearup_step_scroll {
+    scroll-snap-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0;
+  }
+  
+  .gearup_step_title {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .gearup_step_description {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+  }
+  
+  .gearup_cta_button {
+    width: 205px;
+    height: 52px;
+    padding: 14px 20px !important;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 55px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .gearup_cta_button:hover {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .gearup_title {
+      font-size: 30px;
+    }
+  
+    .gearup_wrapper {
+      flex-direction: column-reverse;
+      padding: 40px 20px;
+    }
+  
+    .gearup_image_container {
+      position: sticky;
+      top: 0;
+      height: 300px;
+      z-index: 1;
+      background: var(--background-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gearup_image {
+      max-height: 90%;
+      max-width: 90%;
+      border-radius: 16px;
+    }
+  
+    .gearup_scroll_container {
+      gap: 0;
+    }
+  
+    .gearup_step_scroll {
+      padding: 60px 20px;
+      text-align: center;
+      min-height: 50vh;
+    }
+  
+    .gearup_step_title,
+    .gearup_step_description {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gearup_title {
+      font-size: 16px;
+    }
+  }
+  

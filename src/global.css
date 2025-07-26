@@ -1,0 +1,82 @@
+/* =============== GOOGLE FONT =============== */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/* =============== CSS VARIABLES =============== */
+:root {
+  --primary-color: #951CEB;
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --description-color: rgba(255, 255, 255, 0.6);
+  --font-family: "Nunito", sans-serif;
+}
+
+/* =============== RESET + BASE STYLES =============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+/* =============== REUSABLE UTILITY CLASSES =============== */
+.text-primary {
+  color: var(--text-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.text-muted {
+  color: var(--description-color) !important;
+}
+
+.btn-custom {
+  padding: 10px 20px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+}
+
+.home-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: 100%; 
+    background: url("./assets/glow.png") no-repeat center top;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
